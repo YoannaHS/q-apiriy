@@ -4,14 +4,6 @@
     padding: 0;
 }
 
-.nav-white {
-    background-color: #ffff;
-}
-
-.nav-white a {
-    color: #000000;
-    filter: drop-shadow(1px 1px 1px #999);
-}
 .logo-manos {
     width: 3em;
 }
