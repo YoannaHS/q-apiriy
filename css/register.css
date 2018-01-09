@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    background-color: #ffff;
+}
+
+.nav-wrapper a {
+    color: #000000;
+}
+
+.list-home {
+    color: #000000;
+}
+
+.center-align {
+    margin-top: 1em;
+}
