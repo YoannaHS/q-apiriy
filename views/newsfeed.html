@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Enlazamos nuestro framework _materialize_ -->
+    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+    <!-- Enlazamos nuestra hoja de estilo css -->
+    <link rel="stylesheet" href="../css/newsfeed.css">
+    <!-- Enlazamos nuestro logo -->
+    <link rel="shortcut icon" href="../assets/logo/logo-comprimido.png">
+    <!-- Enlazamos los íconos de mayterialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Enlazamos íconos de fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Q'apiriy</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div id="root"></div>
+        <div class="nav-wrapper">
+            <a href="#"><img src="../assets/logo/logo-comprimido.png" class="logo-img" alt=""></a>
+            <a href="#" class="brand-logo hide-on-med-and-down">Q'apiriy</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down list-home">
+                <li>
+                    <a href="sass.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="badges.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="collapsible.html">Regístrate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Enlazamos la librería Jquery -->
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Enlazamos nuestro proyecto de firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDJiWLF8iPqPabjmFWlZIdv5o4wVcZ-VrU",
+        authDomain: "q-apiriy.firebaseapp.com",
+        databaseURL: "https://q-apiriy.firebaseio.com",
+        projectId: "q-apiriy",
+        storageBucket: "q-apiriy.appspot.com",
+        messagingSenderId: "548911602894"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Enlazamos el archivo jquery de materialize -->
+    <script src="../vendors/materialize/js/materialize.min.js"></script>
+    <!-- Enlazamos nuestro archivo JS -->
+    <script src="../js/register.js"></script>
+</body>
+</html>
