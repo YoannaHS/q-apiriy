@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Enlazamos nuestro framework _materialize_ -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Enlazamos nuestros icons de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Enlazamos nuestra hoja de estilo css -->
+  <link rel="stylesheet" href="../css/profile.css">
+  <!-- Enlazamos nuestro logo -->
+  <link rel="shortcut icon" href="../assets/logo/logo-comprimido.png">
+  <title>Q'apiriy</title>
+</head>
+
+<body>
+  <header>
+    <nav class="teal darken-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href=".html" class="btn-flat white-text transparent">Inicio
+              <i class="material-icons left">home</i>
+            </a>
+          </li>
+          <li>
+            <a href="view-profile.html" class="btn-flat white-text transparent">Explorar
+              <i class="material-icons left">search</i>
+            </a>
+          </li>
+          <li>
+            <a href="view-filters.html" class="btn-flat white-text transparent">Mi Perfil
+              <i class="material-icons left">arrow_drop_down</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col l2">
+        <ul id="slide-out" class="side-nav fixed">
+          <li>
+            <div class="user-view">
+              <a href="#!user">
+                <img class="circle" src="../assets/img/contactos/contact0.jpg">
+              </a>
+              <a href="#!name">
+                <span class="white-text name">María Chávez</span>
+              </a>
+              <a href="#!email">
+                <span class="white-text email">mchavez@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <div>
+            <li>
+              Biografía
+            </li>
+          </div>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a class="subheader">Navegación</a>
+          </li>
+          <li>
+            <a class="waves-effect waves-orange" href="#!">Inicio</a>
+          </li>
+          <li>
+            <a class="waves-effect waves-orange" href="#!">Amigos</a>
+          </li>
+          <li>
+            <a class="waves-effect waves-orange" href="#!">Fotos</a>
+          </li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="offset-l4 col l8 col s12">
+        <div class="profile-posts-container" id="profilePostsContainer">
+          <div class="profile-post">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error vel dolorum tenetur reprehenderit eaque
+              harum est esse ex enim sint, hic quasi nobis quia cum explicabo impedit, quibusdam dignissimos!</p>
+          </div>
+          <div>
+            <p class="profile-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quidem ut aperiam repudiandae repellat optio mollitia ad quasi vitae ab minus nulla placeat omnis, soluta nam alias quod rem illo!</p>
+          </div>
+          <div class="profile-post">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, necessitatibus inventore cupiditate corporis
+              maiores laborum eos similique? Libero alias tempore excepturi beatae commodi voluptate omnis nam eligendi.
+              Aspernatur, officia quis?</p>
+          </div>
+          <div class="profile-post">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, accusamus doloribus! Earum nostrum consequatur
+              adipisci, consequuntur est corporis optio accusamus totam aliquam et quia voluptatem nesciunt fugiat reiciendis
+              quas vero.</p>
+          </div>
+          <div class="profile-post">
+            <p>Hola, este es mi primera publicación en Q'apariy! Espero conocer muchos amigos y compartir muchas experiencias!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Enlazamos la librería Jquery -->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Enlazamos el archivo jquery de materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Enlazamos nuestro archivo JS de vista Profile´+-->
+  <script src="../js/profile.js"></script>
+  <!-- Enlazamos nuestro archivo JS -->
+  <!-- <script src="../js/app.js"></script> -->
+</body>
+
+</html>

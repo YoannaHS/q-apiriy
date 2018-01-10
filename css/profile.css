@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+}
+
+ul.side-nav {
+    margin-top: 64px;
+    width: 30%;
+}
+
+.side-nav .user-view {
+    background-color: lightgrey;
+    background-image: url('../assets/img/profile-bg.jpg');
+    background-size: contain;
+    font-size: 5em;
+}
+
+.profile-posts-container {
+    width: 100%;
+    padding-top: 3em;
+}
+
+.profile-post {
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 2px solid teal;
+
+}
