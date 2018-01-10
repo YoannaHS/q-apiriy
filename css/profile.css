@@ -73,17 +73,50 @@ nav {
     padding-right: 1.5em;
 }
 
-/**/
-input.follow {
+/* Estilos del botón siguiendo-dejar de seguir-seguir */
+
+#follow-btn {
     font-size: 0.8em;
-    color: orangered;
     padding: 0.3em 0.5em;
-    margin-top: 0.3em;
-    background-color: teal;
+    margin-top: 0.6em;
     border-radius: 5px;
-    border-color: darkorange;
 }
 
+.following {
+    color: white;
+    background-color: teal;
+    border-color: white;
+}
+
+.unfollow {
+    color: white;
+    background-color: orangered;
+    border-color: white;
+}
+
+.follow {
+    color: orangered;
+    background-color: white;
+    border-color: orangered;
+}
+
+/* Estilos para los botones en la biografía */
+.bio-btn {
+    font-size: 1em;
+    padding: 0.3em 0.5em;
+    margin-top: 0;
+    border-radius: 5px;
+    color: orangered;
+    background-color: white;
+    border: 1px solid teal;
+    box-shadow: 2px 2px gray;
+}
+
+.bio-btn:hover {
+    color: orangered;
+    background-color: lightcyan;
+    border: 1px solid teal;
+}
 
 /*Estilos para la sección: Publicaciones del usuario*/
 
