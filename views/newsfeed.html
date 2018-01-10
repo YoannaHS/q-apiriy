@@ -18,10 +18,12 @@
 </head>
 <body>
     <!-- Barra de navegación -->
-    <nav>
+    <!-- <nav>
         <div id="root"></div>
         <div class="nav-wrapper">
-            <a href="#"><img src="../assets/logo/logo-comprimido.png" class="logo-img" alt=""></a>
+            <a href="#">
+                <img src="../assets/logo/logo-comprimido.png" class="logo-img" alt="">
+            </a>
             <a href="#" class="brand-logo hide-on-med-and-down">Q'apiriy</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse">
                 <i class="material-icons">menu</i>
@@ -38,7 +40,127 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+    <!-- Estructura de Sider Nav -->
+    <div class="container">
+        <div class="row">
+            <div class="menu-perfil">
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="user-view">
+                            <a href="#!user" class="img-contacto">
+                                <img id="imgprofile" class="circle responsive-img" src="../assets/img/contactos/contact0.jpg">
+                            </a>
+                            <a href="#!name">
+                                <span class="white-text name">María Sanchez</span>
+                            </a>
+                            <a href="#!email">
+                                <span class="white-text email">msanchez@gmail.com</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">cloud</i>Explora</a>
+                    </li>
+                    <li>
+                        <a href="#!">Post</a>
+                    </li>
+                    <li>
+                        <a href="#!">Siguiendo</a>
+                    </li>
+                    <li>
+                        <a href="#!">Seguidores</a>
+                    </li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a class="subheader">Intereses</a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="#!">Animales</a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="#!">Educación</a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="#!">Medio Ambiente</a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="#!">Arte y Cultura</a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="#!">Salud</a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="#!">Recibir y Ayudar a Huéspedes</a>
+                    </li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+            <div class="container">
+            
+            <div class="row">
+                <div class="col s12">
+            
+                    <!-- Textarea para agregar nuevas publicaciones -->
+                    <div class="profile-post">
+                        <form action="">
+                            <textarea id="text-area" class="noscroll" clid="textarea1" placeholder="¿Algo que compartir?"></textarea>
+                            <button id="post-btn" class="waves-effect waves-light btn right" type="submit" value="publica" disabled>Publica</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12">
+                    <div class="profile-posts-container" id="profilePostsContainer">
+            
+                        <!-- Contenedor de publicaciones -->
+                        <div class="cont-v">
+                            <div class="video-container">
+                                <iframe width="853" height="480"src="https://www.youtube.com/embed/_Pxa0JBRMp0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="profile-post clearfix">
+                            <div class="image-container">
+                                <img class="responsive-img" src="../assets/img/new1.JPG" alt="Personas haciendo ejercicio al aire libre">
+                            </div>
+                            <p>Seguimos en Cusco! Hoy pasamos el día al aire libre con los niños del albergue, después de varios días de
+                                lluvia al fin tuvimos un día soleado y aprovechamos el buen tiempo para hacer varios juegos y ejercicios.</p>
+                        </div>
+            
+                        <div class="profile-post clearfix">
+                            <p>Estoy en</p>
+                        </div>
+            
+                        <div class="profile-post clearfix">
+                            <div class="image-container">
+                                <img class="responsive-img" src="../assets/img/new2.jpg" alt="Niña en Cusco">
+                            </div>
+                            <p><a href="https://www.aldeasinfantiles.org.pe/n/guardar4/luz-del-sur-dona-9500-dolares-en-beneficio-de-los">Luz del Sur dona 9500 dólares en beneficio de los niños y niñas de Aldeas Infantiles SOS Perú</a></p>
+                        </div>
+                        <div class="profile-post clearfix">
+                            <div class="image-container">
+                                <img class="responsive-img" src="../assets/img/new3.JPG" alt="Mujer con mono en los hombros">
+                            </div>
+                            <p>Uno de los peores finales es acabar solo y abandonado, sin el respaldo de tus familiares, de tus amigos, de tu gente, de todos. Más aún cuando los años ya empiezan a pasar factura, cuando los párpados comienzan ver un mundo donde solo esta una madre o los sueños de un adolescente empiezan a encaminarse sin un rumbo.</p>
+                        </div>
+                        <div class="profile-post clearfix">
+                            <p>Hola, este es mi primera publicación en Q'apariy! Espero conocer muchos amigos y compartir muchas experiencias!</p>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
     <!-- Enlazamos la librería Jquery -->
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <!-- Enlazamos nuestro proyecto de firebase -->
@@ -58,6 +180,6 @@
     <!-- Enlazamos el archivo jquery de materialize -->
     <script src="../vendors/materialize/js/materialize.min.js"></script>
     <!-- Enlazamos nuestro archivo JS -->
-    <script src="../js/register.js"></script>
+    <script src="../js/newsfeed.js"></script>
 </body>
 </html>
