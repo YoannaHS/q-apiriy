@@ -1,33 +1,132 @@
+/*Reseteamos los valores iniciales de las cajas*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+/*Estilos para la barra de navegación*/
+
 nav {
     position: fixed;
+    z-index: 50;
 }
 
-ul.side-nav {
-    margin-top: 64px;
-    width: 30%;
+.dropdown-content li>a,
+.dropdown-content li>span {
+    overflow: hidden;
+    margin: 0.5em;
+    padding: 0em;
 }
 
-.side-nav .user-view {
+
+/*Estilos para la sección: Perfil*/
+
+.profile-container {
+    margin-top: 5.5em;
+}
+
+.first-column,
+.second-column {
+    display: table;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.first-column {
     background-color: lightgrey;
     background-image: url('../assets/img/profile-bg.jpg');
     background-size: contain;
-    font-size: 5em;
 }
 
-.profile-posts-container {
-    width: 100%;
-    padding-top: 3em;
+.first-column p {
+    font-size: 1.5em;
+    color: white;
+    padding-top: 1.5em;
+    padding-right: 2.5em;
+}
+
+.image-container {
+    width: 70%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-container img {
+    width: 90%;
+    padding: 1em;
+}
+
+.second-column p {
+    padding-right: 1.5em;
+}
+
+.bio-links li {
+    display: inline-block;
+    font-size: 1.2em;
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+}
+
+/**/
+input.follow {
+    font-size: 0.8em;
+    color: orangered;
+    padding: 0.3em 0.5em;
+    margin-top: 0.3em;
+    background-color: teal;
+    border-radius: 5px;
+    border-color: darkorange;
+}
+
+
+/*Estilos para la sección: Publicaciones del usuario*/
+
+.clearfix {
+    overflow: auto;
+}
+
+.profile-post textarea {
+    width: 90vw;
+    height: auto;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.profile-post p {
+    padding: 0.5em 2em;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.profile-post button {
+    margin-bottom: 1em;
 }
 
 .profile-post {
-    margin-bottom: 2em;
-    padding: 1em;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
     border: 2px solid teal;
+    box-shadow: 3px 3px #f57c00;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: #e0f7fa;
+}
 
+.profile-post .image-container {
+    width: 100%;
+}
+
+.profile-post .image-container img {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
