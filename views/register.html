@@ -18,6 +18,7 @@
 </head>
 <body>
     <nav>
+        <div id="root"></div>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">Q'apiriy</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -64,20 +65,17 @@
                         <!-- Enlazamos las redes sociales para loguearse -->
                         <div class="center-align">
                             <div class="col s4 l4">
-                                <a class="waves-effect waves-light btn-floating social google" href="https://accounts.google.com/signin/v2/sl/pwd?service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-                                    target="_black" style="background: #dd4b39">
+                                <a class="waves-effect waves-light btn-floating social google" id="google" style="background: #dd4b39">
                                     <i class="fa fa-google"></i> Sign in with Google
                                 </a>
                             </div>
                             <div class="col s4 l4">
-                                <a class="waves-effect waves-light btn-floating social facebook" href="https://www.facebook.com/"
-                                target="_black" style="background: #3d5b99">
+                                <a class="waves-effect waves-light btn-floating social facebook" id="facebook" style="background: #3d5b99">
                                     <i class="fa fa-facebook"></i> Sign in with facebook
                                 </a>
                             </div>
                             <div class="col s4 l4">
-                                <a class="waves-effect waves-light btn-floating social twitter" href="https://twitter.com/?lang=es"
-                                target="_black" style="background: #55acee">
+                                <a class="waves-effect waves-light btn-floating social twitter" id="twitter" style="background: #55acee">
                                     <i class="fa fa-twitter"></i> Sign in with twitter
                                 </a>
                             </div>
@@ -96,6 +94,20 @@
 
     <!-- Enlazamos la librería Jquery -->
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Enlazamos nuestro proyecto de firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDJiWLF8iPqPabjmFWlZIdv5o4wVcZ-VrU",
+        authDomain: "q-apiriy.firebaseapp.com",
+        databaseURL: "https://q-apiriy.firebaseio.com",
+        projectId: "q-apiriy",
+        storageBucket: "q-apiriy.appspot.com",
+        messagingSenderId: "548911602894"
+      };
+      firebase.initializeApp(config);
+    </script>
     <!-- Enlazamos el archivo jquery de materialize -->
     <script src="../vendors/materialize/js/materialize.min.js"></script>
     <!-- Enlazamos nuestro archivo JS -->
