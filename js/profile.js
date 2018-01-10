@@ -1,13 +1,25 @@
-alert("Hello! I am an alert box!!");
+$(document).ready(function () {
+    $(".button-collapse").sideNav();
 
-//Por editar
-// Initialize collapse button
-$(".button-collapse").sideNav();
-// Initialize collapsible (uncomment the line below if you use the dropdown variation)
-//$('.collapsible').collapsible();
+    var textArea = $('#text-area');
 
-$('.button-collapse').sideNav({
-    menuWidth: 300, // Default is 300
-    edge: 'right', // Choose the horizontal origin
-    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    draggable: true, // Choose whether you can drag to open on touch screens,
+    textArea.on('keyup', function(event) {
+        //console.log(event.target);
+        //console.log($(this).val());
+        //console.log($(this).val().length);
+        if($(this).val().length > 10) {
+          $(this).css('color', 'teal');
+          $('#post-btn').attr('disabled', false);
+        }
+      });
+    
+      $('#post-btn').on('click', function(event) {
+        event.preventDefault()
+        var textValue = textArea.val();
+        $('.profile-posts-container').prepend('<div class="profile-post">'+ textValue +'</div>');
+        textArea.val('');
+      });
+
+
+
+});
