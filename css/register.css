@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.logo-img {
+    width: 4em;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
 .nav-wrapper {
     background-color: #ffff;
 }

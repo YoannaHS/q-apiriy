@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-img {
+    width: 4em;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.logo-small {
+    width: 3em;
+}
+
+.img-contacto img {
+    margin-left: 2em;
+    width: 8em;
+}
+
+.nav-wrapper {
+    background-color: #ffff;
+}
+
+.nav-wrapper a {
+    color: #000000;
+}
+
+.list-home {
+    color: #000000;
+}
+
+header, main, footer {
+    padding-left: 300px;
+  }
+
+.cont-v {
+    margin-bottom: 4em;
+}
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
