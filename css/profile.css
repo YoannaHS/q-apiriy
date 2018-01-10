@@ -14,11 +14,29 @@ nav {
     z-index: 50;
 }
 
+.button-collapse {
+    color: black;
+}
+
+nav img {
+    max-height: 100%;
+    width: auto;
+}
+
+.brand-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
 .dropdown-content li>a,
 .dropdown-content li>span {
     overflow: hidden;
     margin: 0.5em;
     padding: 0em;
+    color: black;
 }
 
 
@@ -38,14 +56,13 @@ nav {
 }
 
 .first-column {
-    background-color: lightgrey;
-    background-image: url('../assets/img/profile-bg.jpg');
+    background-color: white;
     background-size: contain;
 }
 
 .first-column p {
     font-size: 1.5em;
-    color: white;
+    color: black;
     padding-top: 1.5em;
     padding-right: 2.5em;
 }
@@ -106,16 +123,13 @@ nav {
     padding: 0.3em 0.5em;
     margin-top: 0;
     border-radius: 5px;
-    color: orangered;
+    color: steelblue;
     background-color: white;
-    border: 1px solid teal;
-    box-shadow: 2px 2px gray;
 }
 
 .bio-btn:hover {
-    color: orangered;
-    background-color: lightcyan;
-    border: 1px solid teal;
+    color: white;
+    background-color: steelblue;
 }
 
 /*Estilos para la sección: Publicaciones del usuario*/
