@@ -1,4 +1,4 @@
-                                           Q'APIRIY
+Q'APIRIY
 =================
 La red social que integra a toda una comunidad dispuesta a colabrorar en el voluntariado mientras Viaja, Comparte y vive nuevas experiencias.
 
@@ -32,7 +32,7 @@ Un emprendedor muy visionario nos ha encargado crear una red social. No nos da m
 ![trello](assets/img/trello-readme.png)
 
 ### Definición del Diseño
-**Sketchin**
+**Sketching**
 
 ![sketch](assets/img/skt.jpg)
 
