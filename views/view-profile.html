@@ -23,98 +23,93 @@
     <!-- Barra de Navegación-->
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#">
+        <a id="logo-container" href="newsfeed.html">
           <span class="logo-container">
-            <img src="../assets/logo/logo-comprimido.png" alt="logo">
+            <img src="../assets/logo/logo-navbar.png" alt="logo">
           </span>
-          <span class="brand-text">Q'apiriy</span>
         </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
           <li>
-<<<<<<< HEAD
-            <a href="newsfeed.html" class="btn-flat white-text transparent">Inicio
-=======
-            <a href="index.html" class="btn-flat transparent">Inicio
->>>>>>> e88fb00267ee636944ceb5ce48ec9d996db6609f
+            <a href="newsfeed.html" class="btn-flat transparent">Inicio
               <i class="material-icons left">home</i>
             </a>
           </li>
           <li>
-            <a href="view-profile.html" class="btn-flat transparent">Explorar
+            <a href="newsfeed.html" class="btn-flat transparent">Explorar
               <i class="material-icons left">search</i>
             </a>
           </li>
-    
+
           <!-- Trigger del Menu Dropdown-->
           <li>
             <a class="dropdown-button btn-flat transparent active" href="#" data-activates="dropdown1">Mi Perfil
               <i class="material-icons left">arrow_drop_down</i>
             </a>
           </li>
-    
+
         </ul>
-    
+
         <!-- Estructura del Menu Dropdown-->
         <ul id="dropdown1" class="dropdown-content">
           <li>
-            <a href="#">Mi cuenta
+            <a href="view-profile.html">Mi cuenta
               <i class="material-icons left">account_circle</i>
             </a>
           </li>
           <li>
-            <a href="#">Mensajes
+            <a href="userChat.html">Mensajes
               <i class="material-icons left">message</i>
             </a>
           </li>
           <li>
-            <a href="#">Herramientas
+            <a href="view-profile.html">Herramientas
               <i class="material-icons left">tune</i>
             </a>
           </li>
           <li>
-            <a href="#" class="logout">Cerrar Sesión
+            <a href="register.html" class="logout">Cerrar Sesión
               <i class="material-icons left">power_settings_new</i>
             </a>
           </li>
         </ul>
-    
+
         <!-- Barra lateral en vista mobile -->
         <ul id="mobile-demo" class="side-nav white">
           <li>
-            <a href="index.html" class="btn-flat transparent">Inicio
+            <a href="newsfeed.html" class="btn-flat transparent">Inicio
               <i class="material-icons left">home</i>
             </a>
           </li>
           <li>
-            <a href="index.html" class="btn-flat transparent">Explorar
+            <a href="newsfeed.html" class="btn-flat transparent">Explorar
               <i class="material-icons left">search</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent">Mi cuenta
+            <a href="view-profile.html" class="btn-flat transparent">Mi cuenta
               <i class="material-icons left">account_circle</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent">Mensajes
+            <a href="userChat.html" class="btn-flat transparent">Mensajes
               <i class="material-icons left">message</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent">Herramientas
+            <a href="view-profile.html" class="btn-flat transparent">Herramientas
               <i class="material-icons left">tune</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent logout">Cerrar Sesión
+            <a href="register.html" class="btn-flat transparent logout">Cerrar Sesión
               <i class="material-icons left">power_settings_new</i>
             </a>
           </li>
         </ul>
-    
+
       </div>
     </nav>
   </header>
@@ -127,7 +122,7 @@
           <!-- Primera sección con el perfil y biografía del usuario -->
           <div class="profile-container">
             <div class="row">
-              <div class="col l6">
+              <div class="col s12 m12 l6">
                 <!-- Columna con la imagen y el nombre del usuario-->
                 <div class="first-column">
                   <div class="image-container">
@@ -138,18 +133,18 @@
                   </p>
                 </div>
               </div>
-              <div class="col l6">
+              <div class="col s12 m12 l6">
                 <!-- Columna con la biografía y links adicionales -->
                 <div class="second-column">
-                  <p>Me llamo María Chávez y soy de Trujillo. Desde muy joven, atraída por la rica cultura de nuestro país, empecé
-                    a viajar por todo el Perú y a conocer distintas realidades. Ser voluntaria me ha hecho crecer mucho como
-                    persona. Me gusta aportar algo a los demás y tratar de ser útil a gente que lo necesita.</p>
+                  <p>Me llamo María y soy de Lima. Desde muy joven, atraída por la rica cultura de nuestro país,
+                    empecé a viajar por todo el Perú y a conocer distintas realidades. Ser voluntaria me ha hecho crecer
+                    mucho como persona. Me gusta aportar algo a los demás y tratar de ser útil a gente que lo necesita.</p>
                   <ul class="bio-links">
                     <li>
                       <div class="divider"></div>
                     </li>
                     <li>
-                      <a class="bio-btn waves-effect waves-orange" href="#!">Inicio</a>
+                      <a class="bio-btn waves-effect waves-orange" href="userChat.html">Mensajes</a>
                     </li>
                     <li>
                       <a class="bio-btn waves-effect waves-orange" href="user.html">Amigos</a>
@@ -165,13 +160,13 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Publicaciones de usuario -->
     <div class="container">
-    
+
       <div class="row">
         <div class="col s12">
-    
+
           <!-- Textarea para agregar nuevas publicaciones -->
           <div class="profile-post">
             <form action="">
@@ -181,15 +176,11 @@
           </div>
         </div>
       </div>
-    
+
       <div class="row">
         <div class="col s12">
           <div class="profile-posts-container" id="profilePostsContainer">
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> afcde8085444fc0a71b6a6b8d2be401fbea60b7b
             <!-- Contenedor de publicaciones -->
             <div class="profile-post clearfix">
               <div class="image-container">
@@ -198,37 +189,37 @@
               <p>Seguimos en Cusco! Hoy pasamos el día al aire libre con los niños del albergue, después de varios días de lluvia
                 al fin tuvimos un día soleado y aprovechamos el buen tiempo para hacer varios juegos y ejercicios.</p>
             </div>
-    
+
             <div class="profile-post clearfix">
-              <p>En la mañana fuimos a comprar más útiles para los niños, su entusiasmo es increíble! No dejo de aprender con ellos.</p>
+              <p>En la mañana fuimos a comprar más útiles para los niños, su entusiasmo es increíble! No dejo de aprender con
+                ellos.</p>
             </div>
-    
+
             <div class="profile-post clearfix">
               <div class="image-container">
                 <img class="responsive-img" src="../assets/img/z20.jpg" alt="Niña en Cusco">
               </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, necessitatibus inventore cupiditate corporis maiores
-                laborum eos similique? Libero alias tempore excepturi beatae commodi voluptate omnis nam eligendi. Aspernatur,
-                officia quis?</p>
+              <p>Llegué ayer a Cusco con un grupo de voluntarios para ayudar en un albergue de niños. Al principio estuvieron algo tímidos, pero después de algunas actividades todos estábamos saltando y riendo, me encantan! Esta foto la tomé en la tarde cuando fuimos a comer cerca a la Plaza de Armmas, la niña fue súper dulce! Me dejó tomarle la foto antes de que comiera su mandarina :P <br>
+              Estaré por aquí 1 mes así que si hay alguien cerca pásenme la voz para conocernos!</p>
             </div>
+
             <div class="profile-post clearfix">
               <div class="image-container">
                 <img class="responsive-img" src="../assets/img/contactos/contact9.jpg" alt="Mujer con mono en los hombros">
               </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, accusamus doloribus! Earum nostrum consequatur
-                adipisci, consequuntur est corporis optio accusamus totam aliquam et quia voluptatem nesciunt fugiat reiciendis
-                quas vero.</p>
+              <p>Empecé una nueva aventura en Puerto Maldonado. Aquí con "Max", mi nuevo engreído! A que posa mejor que yo :) </p>
             </div>
+
             <div class="profile-post clearfix">
               <p>Hola, este es mi primera publicación en Q'apariy! Espero conocer muchos amigos y compartir muchas experiencias!</p>
             </div>
-    
+
           </div>
-    
+
         </div>
       </div>
     </div>
-  
+
   </main>
 
 

@@ -6,17 +6,17 @@ $(document).ready(function () {
 
   //Funcionalidad para que podamos hacer nuevas publicaciones en nuestro perfil
   var textArea = $('#text-area');
-  textArea.on('keyup', function (event) {
+  textArea.on('keyup', function (e) {
     //console.log(event.target);
     //console.log($(this).val());
     //console.log($(this).val().length);
-    if ($(this).val().length > 10) {
+    if ($(this).val().length > 5) {
       $(this).css('color', 'teal');
       $('#post-btn').attr('disabled', false);
     }
   });
 
-  $('#post-btn').on('click', function (event) {
+  $('#post-btn').on('click', function (e) {
     event.preventDefault()
     var textValue = textArea.val();
     $('.profile-posts-container').prepend('<div class="profile-post">' + textValue + '</div>');
@@ -33,49 +33,29 @@ $(document).ready(function () {
       $button.removeClass('unfollow');
       $button.val('Siguiendo');
     } else {
-
       $button.addClass('follow');
       $button.val('Seguir');
     }
   });
 
-  $('#follow-btn').hover(function () {
+  $('#follow-btn').hover(function (e) {
     $button = $(this);
     if ($button.hasClass('following')) {
       $button.addClass('unfollow');
       $button.val('Dejar de seguir');
     }
-  }, function () {
+  }, function (e) {
     if ($button.hasClass('following')) {
       $button.removeClass('unfollow');
       $button.val('Siguiendo');
     }
   });
 
-    $(".button-collapse").sideNav();
 
-    var textArea = $('#text-area');
+  // Agregamos la imagen de perfil
+  var myphoto = localStorage.getItem('imgprofile');
+  var $imgid = $('                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               #imgprofile');
+  $imgid.attr('src', myphoto);
 
-    textArea.on('keyup', function(event) {
-        //console.log(event.target);
-        //console.log($(this).val());
-        //console.log($(this).val().length);
-        if($(this).val().length > 10) {
-          $(this).css('color', 'teal');
-          $('#post-btn').attr('disabled', false);
-        }
-      });
-    
-      $('#post-btn').on('click', function(event) {
-        event.preventDefault()
-        var textValue = textArea.val();
-        $('.profile-posts-container').prepend('<div class="profile-post">'+ textValue +'</div>');
-        textArea.val('');
-      });
-      // Agregamos la imagen de perfil
-      var myphoto = localStorage.getItem('imgprofile');
-      var $imgid = $('                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               #imgprofile');
-      $imgid.attr('src', myphoto);
-      
 
 });

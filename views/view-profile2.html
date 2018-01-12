@@ -23,25 +23,30 @@
     <!-- Barra de Navegación-->
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <a id="logo-container" href="newsfeed.html">
+          <span class="logo-container">
+            <img src="../assets/logo/logo-comprimido.png" alt="logo">
+          </span>
+          <span class="brand-text">Q'apiriy</span>
+        </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="index.html" class="btn-flat transparent">Inicio
+            <a href="newsfeed.html" class="btn-flat transparent">Inicio
               <i class="material-icons left">home</i>
             </a>
           </li>
           <li>
-            <a href="view-profile.html" class="btn-flat transparent">Explorar
+            <a href="newsfeed.html" class="btn-flat transparent">Explorar
               <i class="material-icons left">search</i>
             </a>
           </li>
 
           <!-- Trigger del Menu Dropdown-->
           <li>
-            <a class="dropdown-button btn-flat transparent active" href="#" data-activates="dropdown1">Mi Perfil
+            <a class="dropdown-button btn-flat transparent active" href="view-profile.html" data-activates="dropdown1">Mi Perfil
               <i class="material-icons left">arrow_drop_down</i>
             </a>
           </li>
@@ -51,22 +56,22 @@
         <!-- Estructura del Menu Dropdown-->
         <ul id="dropdown1" class="dropdown-content">
           <li>
-            <a href="#">Mi cuenta
+            <a href="view-profile.html">Mi cuenta
               <i class="material-icons left">account_circle</i>
             </a>
           </li>
           <li>
-            <a href="#">Mensajes
+            <a href="userChat.html">Mensajes
               <i class="material-icons left">message</i>
             </a>
           </li>
           <li>
-            <a href="#">Herramientas
+            <a href="newsfeed.html">Herramientas
               <i class="material-icons left">tune</i>
             </a>
           </li>
           <li>
-            <a href="#" class="logout">Cerrar Sesión
+            <a href="register.html" class="logout">Cerrar Sesión
               <i class="material-icons left">power_settings_new</i>
             </a>
           </li>
@@ -75,32 +80,32 @@
         <!-- Barra lateral en vista mobile -->
         <ul id="mobile-demo" class="side-nav">
           <li>
-            <a href="index.html" class="btn-flat transparent">Inicio
+            <a href="newsfeed.html" class="btn-flat transparent">Inicio
               <i class="material-icons left">home</i>
             </a>
           </li>
           <li>
-            <a href="index.html" class="btn-flat transparent">Explorar
+            <a href="newsfeed.html" class="btn-flat transparent">Explorar
               <i class="material-icons left">search</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent">Mi cuenta
+            <a href="view-profile.html" class="btn-flat transparent">Mi cuenta
               <i class="material-icons left">account_circle</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent">Mensajes
+            <a href="userChat.html" class="btn-flat transparent">Mensajes
               <i class="material-icons left">message</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent">Herramientas
+            <a href="newsfeed.html" class="btn-flat transparent">Herramientas
               <i class="material-icons left">tune</i>
             </a>
           </li>
           <li>
-            <a href="#" class="btn-flat transparent logout">Cerrar Sesión
+            <a href="register.html" class="btn-flat transparent logout">Cerrar Sesión
               <i class="material-icons left">power_settings_new</i>
             </a>
           </li>
@@ -126,26 +131,28 @@
                   </div>
                   <p>Augusto Carbajal
                     <br> acarbajal@gmail.com
-                    <br> <input id="follow-btn" class="following" type="button" value="Siguiendo">
+                    <br>
+                    <input id="follow-btn" class="following" type="button" value="Siguiendo">
                   </p>
                 </div>
               </div>
               <div class="col l6">
                 <!-- Columna con la biografía y links adicionales -->
                 <div class="second-column">
-                  <p>Saludos desde Iquitos! Me llamo Augusto y me encantaría conocer más voluntarios para compartir nuestras experiencias y coincidir en nuevos viajes!</p>
+                  <p>Saludos desde Arequipa! Me llamo Augusto y me encantaría conocer más voluntarios para compartir nuestras
+                    experiencias y coincidir en nuevos viajes!</p>
                   <ul class="bio-links">
                     <li>
                       <div class="divider"></div>
                     </li>
                     <li>
-                      <a class="bio-btn" href="#!">Inicio</a>
+                      <a class="bio-btn" href="userChat.html">Mensajes</a>
                     </li>
                     <li>
-                      <a class="bio-btn" href="user.html">Amigos</a>
+                      <a class="bio-btn" href="view-profile2.html">Amigos</a>
                     </li>
                     <li>
-                      <a class="bio-btn" href="espacioFotos.html">Fotos</a>
+                      <a class="bio-btn" href="view-profile2.html">Fotos</a>
                     </li>
                   </ul>
                 </div>
@@ -162,7 +169,7 @@
       <div class="row">
         <div class="col s12">
           <div class="profile-posts-container" id="profilePostsContainer">
-            
+
             <div class="profile-post clearfix">
               <div class="image-container">
                 <img class="responsive-img" src="../assets/img/trekking-4.jpg" alt="Hombre haciendo trekking en las montañas">
@@ -185,9 +192,7 @@
                 Aspernatur, officia quis?</p>
             </div>
             <div class="profile-post clearfix">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, accusamus doloribus! Earum nostrum consequatur
-                adipisci, consequuntur est corporis optio accusamus totam aliquam et quia voluptatem nesciunt fugiat reiciendis
-                quas vero.</p>
+              <p>Esperando con ansias mis vacaciones para salir pronto de la ciudad. Estamos armando un grupo para ir a Huaraz por unos días. Si alguien más de Arequipa quiere apuntarse salimos en 2 semanas! Escríbanme por el chat ;) </p>
             </div>
             <div class="profile-post clearfix">
               <p>Hola, este es mi primera publicación en Q'apariy! Espero conocer muchos amigos y compartir muchas experiencias!</p>
