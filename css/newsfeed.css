@@ -39,6 +39,42 @@ header, main, footer {
     margin-bottom: 4em;
 }
 
+/* Estilos para el post */
+
+.clearfix {
+    overflow: auto;
+}
+
+.profile-post textarea {
+    width: 90vw;
+    height: auto;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.profile-post p {
+    padding: 0.5em 2em;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.profile-post button {
+    margin-bottom: 1em;
+}
+
+.profile-post {
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    border: 2px solid teal;
+    box-shadow: 3px 3px #f57c00;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: white;
+}
+
   @media only screen and (max-width : 992px) {
     header, main, footer {
       padding-left: 0;

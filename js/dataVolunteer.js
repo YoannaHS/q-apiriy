@@ -9,7 +9,7 @@ var data = {
 		          'photos': [
 		                        {  
 		                          'id': 100,
-		                          'photo': 'Market 770_p1.png', 
+		                          'photo': 'tester1.png', 
 		                          'date': '4 de mayo de 2017',
 		                          'likes':5,
 		                          'comentarios':[
@@ -33,7 +33,7 @@ var data = {
 		                        },
 		                        {  
 		                          'id': 101,
-		                          'photo': 'Market 770_p1.png', 
+		                          'photo': 'tester2.png', 
 		                          'date': '4 de mayo de 2018',
 		                          'likes':7,
 		                          'comentarios':[
@@ -62,7 +62,7 @@ var data = {
 		          'photos': [
 		                        {
 		                          'id': 102,
-		                          'photo': 'Market 770_p1.png', 
+		                          'photo': 'tester0.png', 
 		                          'date': '4 de mayo de 2017',
 		                          'likes':5,
 		                          'comentarios':[
@@ -86,7 +86,7 @@ var data = {
 		                        },
 		                        {
 		                          'id': 103,
-		                          'photo': 'Market 770_p1.png', 
+		                          'photo': 'tester1.png', 
 		                          'date': '4 de mayo de 2018',
 		                          'likes':8,
 		                          'comentarios':[
@@ -111,7 +111,7 @@ var data = {
 		                        },
 		                        {
 		                          'id': 104,
-		                          'photo': 'Market 770_p1.png', 
+		                          'photo': 'tester2.png', 
 		                          'date': '4 de mayo de 2018',
 		                          'likes':7,
 		                          'comentarios':[
@@ -135,7 +135,7 @@ var data = {
 		                        },
 		                        {
 		                          'id': 105,
-		                          'photo': 'Market 770_p1.png', 
+		                          'photo': 'tester3.png', 
 		                          'date': '4 de mayo de 2018',
 		                          'likes':20,
 		                          'comentarios':[
@@ -156,31 +156,7 @@ var data = {
 						                         }
 		                          ]
 		                        },
-		                        {
-		                          'id': 106,
-		                          'photo': 'Market 770_p1.png', 
-		                          'date': '4 de mayo de 2018',
-		                          'likes':7,
-		                          'comentarios':[
-			                                      {'de': 'julieth apolo',
-							                       'photo':'julieth.png',
-							                       'comm1':'hermoza foto'
-							                         
-							                       },
-							                      {'de': 'ivan alarcon',
-							                        'photo':'ivan.png',
-							                        'comm1':'me quedo con la foto'
-							                       
-							                       },
-							                       {'de': 'gregory vasquez',
-							                        'photo':'gregory.png',
-							                        'comm1':'viajemos juntos'
-							                        
-							                       }
-
-		                            
-		                          ]
-		                        }
+		                       
 		                    ]
 
 		        },

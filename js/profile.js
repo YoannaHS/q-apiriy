@@ -56,6 +56,4 @@ $(document).ready(function () {
   var myphoto = localStorage.getItem('imgprofile');
   var $imgid = $('                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               #imgprofile');
   $imgid.attr('src', myphoto);
-
-
 });
