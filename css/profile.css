@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+html, body {
+    /*max-width: 100%;*/
+    overflow-x: hidden;
+}
+
 main {
     background: linear-gradient(to right, #86fde8, #acb6e5);
 }
