@@ -9,7 +9,7 @@
     <!-- Enlazamos nuestra hoja de estilo css -->
     <link rel="stylesheet" href="../css/register.css">
     <!-- Enlazamos nuestro logo -->
-    <link rel="shortcut icon" href="../assets/logo/logo-comprimido.png">
+    <link rel="shortcut icon" href="../assets/logo/logo-sinfondo1.png">
     <!-- Enlazamos los íconos de mayterialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Enlazamos íconos de fontawesome -->
@@ -20,9 +20,12 @@
     <nav>
         <div id="root"></div>
         <div class="nav-wrapper">
-            <span><a href="#"><img src="../assets/logo/logo-navbar.png" class="logo-img" alt=""></a></span>
-            <a href="#" class="brand-logo"></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo">
+                <img src="../assets/logo/logo-navbar.png" class="logo-img" alt="">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down list-home">
                 <li>
                     <a href="#">Inicio</a>
@@ -38,7 +41,7 @@
     </nav>
     <div>
         <div class="row section">
-            <div class="slider col l7" id="fullscreen">
+            <div class="slider col l6 offset-l1 hide-on-small-only style-slider" id="fullscreen">
                 <ul class="slides">
                     <li>
                         <img src="../assets/img/todos-unidos.png">
@@ -74,16 +77,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="col s12 l5">
-                <div class="col s12 m12 z-depth-1 white t-row hoverable">
+            <div class="col s8 offset-s2 col l3 offset-l1">
+                <div class="col s12 m12 white t-row hoverable style-login">
                     <div class="card no-shadow transparent">
-                        <div class="card-content ">
+                        <div class="card-content">
                             <span class="card-title">Login</span>
                             <form class="col s12">
                                 <div class="row">
                                     <div class="input-field">
                                         <input id="first_name" type="text" class="teal-text">
-                                        <label for="first_name">Username</label>
+                                        <label for="first_name">Email</label>
                                     </div>
                                     <div class="input-field">
                                         <input id="password" type="password" class="teal-text">
@@ -131,16 +134,16 @@
     <!-- Enlazamos nuestro proyecto de firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDJiWLF8iPqPabjmFWlZIdv5o4wVcZ-VrU",
-        authDomain: "q-apiriy.firebaseapp.com",
-        databaseURL: "https://q-apiriy.firebaseio.com",
-        projectId: "q-apiriy",
-        storageBucket: "q-apiriy.appspot.com",
-        messagingSenderId: "548911602894"
-      };
-      firebase.initializeApp(config);
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDJiWLF8iPqPabjmFWlZIdv5o4wVcZ-VrU",
+            authDomain: "q-apiriy.firebaseapp.com",
+            databaseURL: "https://q-apiriy.firebaseio.com",
+            projectId: "q-apiriy",
+            storageBucket: "q-apiriy.appspot.com",
+            messagingSenderId: "548911602894"
+        };
+        firebase.initializeApp(config);
     </script>
     <!-- Enlazamos el archivo jquery de materialize -->
     <script src="../vendors/materialize/js/materialize.min.js"></script>

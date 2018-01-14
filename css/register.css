@@ -5,9 +5,7 @@
 }
 
 .logo-img {
-    width: 13em;
-    margin-left: 2em;
-    margin-right: 1em;
+    width: 6em;
 }
 
 .nav-wrapper {
@@ -23,5 +21,12 @@
 }
 
 .center-align {
-    margin-top: 1em;
+    margin-top: 2em;
+}
+
+.style-slider {
+    margin-top: 3em;
+}
+.style-login {
+    margin-top: 3em;
 }
