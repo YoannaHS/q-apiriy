@@ -1,19 +1,19 @@
 $(document).ready(function() {
   // Funcion para correr el slider
-  $(document).ready(function(){
+  $(document).ready(function() {
     $('.slider').slider();
   });
-//    Login mediante google 
+  //    Login mediante google 
   var provider = new firebase.auth.GoogleAuthProvider();
   $('#google').on('click', function() {
     firebase.auth().signInWithPopup(provider).then(function(result) {
       console.log(result.user);
-      window.location.href = '../views/view-profile.html';
+      window.location.href = '../views/newsfeed.html';
       
       // Almacenamos la imagen de perfil en una variable
-      $('#root').append("<img src='"+result.user.photoURL+"' />");
+      $('#root').append('<img src=\'' + result.user.photoURL + '\' />');
       var imgprofile1 = $('#root').children().eq(0).prop('src');
-      localStorage.setItem('imgprofile', imgprofile1 );
+      localStorage.setItem('imgprofile', imgprofile1);
     });
   });
 });

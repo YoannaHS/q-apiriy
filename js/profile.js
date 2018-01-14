@@ -1,23 +1,22 @@
-$(document).ready(function () {
+$(document).ready(function() {
+  // Funcionalidad de Materialize para que links del navbar se conviertan en menu hamburguesa
+  $('.button-collapse').sideNav();
 
-  //Funcionalidad de Materialize para que links del navbar se conviertan en menu hamburguesa
-  $(".button-collapse").sideNav();
 
-
-  //Funcionalidad para que podamos hacer nuevas publicaciones en nuestro perfil
+  // Funcionalidad para que podamos hacer nuevas publicaciones en nuestro perfil
   var textArea = $('#text-area');
-  textArea.on('keyup', function (e) {
-    //console.log(event.target);
-    //console.log($(this).val());
-    //console.log($(this).val().length);
+  textArea.on('keyup', function(e) {
+    // console.log(event.target);
+    // console.log($(this).val());
+    // console.log($(this).val().length);
     if ($(this).val().length > 5) {
       $(this).css('color', 'teal');
       $('#post-btn').attr('disabled', false);
     }
   });
 
-  $('#post-btn').on('click', function (e) {
-    event.preventDefault()
+  $('#post-btn').on('click', function(e) {
+    event.preventDefault();
     var textValue = textArea.val();
     $('.profile-posts-container').prepend('<div class="profile-post">' + textValue + '</div>');
     textArea.val('');
@@ -25,7 +24,7 @@ $(document).ready(function () {
 
 
   // Funcionalidad para que el botón follow se active en los perfiles de amigos
-  $('#follow-btn').on('click', function (e) {
+  $('#follow-btn').on('click', function(e) {
     e.preventDefault();
     $button = $(this);
     if ($button.hasClass('follow')) {
@@ -38,13 +37,13 @@ $(document).ready(function () {
     }
   });
 
-  $('#follow-btn').hover(function (e) {
+  $('#follow-btn').hover(function(e) {
     $button = $(this);
     if ($button.hasClass('following')) {
       $button.addClass('unfollow');
       $button.val('Dejar de seguir');
     }
-  }, function (e) {
+  }, function(e) {
     if ($button.hasClass('following')) {
       $button.removeClass('unfollow');
       $button.val('Siguiendo');

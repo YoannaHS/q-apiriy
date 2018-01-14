@@ -9,7 +9,7 @@
     <!-- Enlazamos nuestra hoja de estilo css -->
     <link rel="stylesheet" href="../css/newsfeed.css">
     <!-- Enlazamos nuestro logo -->
-    <link rel="shortcut icon" href="../assets/logo/logo-comprimido.png">
+    <link rel="shortcut icon" href="../assets/logo/logo-sinfondo1.png">
     <!-- Enlazamos los íconos de mayterialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Enlazamos íconos de fontawesome -->
@@ -48,16 +48,14 @@
                 <ul id="slide-out" class="side-nav fixed">
                     <li>
                         <!-- Enlazamos la foto de gmail -->
-                        <div class="user-view" id="root">
-                            <a href="#!user" class="img-contacto">
-                                <img id="imgprofile" class="circle responsive-img" src="">
-                            </a>
-                            <a href="#!name">
-                                <span class="white-text name">María Sanchez</span>
-                            </a>
-                            <a href="#!email">
-                                <span class="white-text email">msanchez@gmail.com</span>
-                            </a>
+                        <div class="user-view">
+                            <div>
+                                <div id="root">
+                                    <a href="#!user" class="img-contacto">
+                                        <img id="imgprofile" class="circle responsive-img" src="">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -153,18 +151,6 @@
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <!-- Enlazamos nuestro proyecto de firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDJiWLF8iPqPabjmFWlZIdv5o4wVcZ-VrU",
-        authDomain: "q-apiriy.firebaseapp.com",
-        databaseURL: "https://q-apiriy.firebaseio.com",
-        projectId: "q-apiriy",
-        storageBucket: "q-apiriy.appspot.com",
-        messagingSenderId: "548911602894"
-      };
-      firebase.initializeApp(config);
-    </script>
     <!-- Enlazamos el archivo jquery de materialize -->
     <script src="../vendors/materialize/js/materialize.min.js"></script>
     <!-- Enlazamos nuestro archivo JS -->
