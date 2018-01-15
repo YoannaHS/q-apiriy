@@ -2,7 +2,12 @@ $(document).ready(function() {
   // Enlazamos nuestra imagen de perfil
   var myphoto = localStorage.getItem('imgprofile');
   var $imgid = $('                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               #imgprofile');
-  $imgid.attr('src', myphoto);  
+  $imgid.attr('src', myphoto); 
+
+  // Iniciando parallax para el video intro
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
 
   // Initialize collapse button
   $('.button-collapse').sideNav();

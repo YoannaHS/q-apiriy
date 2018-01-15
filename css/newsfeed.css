@@ -4,21 +4,6 @@
     box-sizing: border-box;
 }
 
-.logo-img {
-    width: 4em;
-    margin-left: 2em;
-    margin-right: 1em;
-}
-
-.logo-small {
-    width: 3em;
-}
-
-.img-contacto img {
-    margin-left: 2em;
-    width: 8em;
-}
-
 .nav-wrapper {
     background-color: #ffff;
 }
@@ -31,52 +16,29 @@
     color: #000000;
 }
 
-header, main, footer {
-    padding-left: 300px;
-  }
-
-.cont-v {
-    margin-bottom: 4em;
+.img-perfil {
+    width: 3em;
 }
 
-/* Estilos para el post */
-
-.clearfix {
-    overflow: auto;
+.parallax-container {
+    height: 250px;
 }
 
-.profile-post textarea {
-    width: 90vw;
-    height: auto;
-    border: none;
-    outline: none;
-    resize: none;
-}
-
-.profile-post p {
-    padding: 0.5em 2em;
-}
-
-.noscroll {
+.responsive-video {
     overflow: hidden;
+    width: 100%;
 }
 
-.profile-post button {
-    margin-bottom: 1em;
+.logo {
+    margin-top: 1em;
+    width: 10em;
 }
 
-.profile-post {
-    margin-bottom: 1.5em;
-    padding: 0.5em;
-    border: 2px solid teal;
-    box-shadow: 3px 3px #f57c00;
-    border-radius: 5px;
-    font-size: 1.2em;
-    background-color: white;
+.onu {
+    width: 6em;
+    height: 6em;
 }
 
-  @media only screen and (max-width : 992px) {
-    header, main, footer {
-      padding-left: 0;
-    }
-  }
+.comentary {
+    padding: 1em;
+}

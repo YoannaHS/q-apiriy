@@ -19,83 +19,40 @@
 <body>
     <!-- Barra de navegación -->
     <nav>
-        <div id="root"></div>
         <div class="nav-wrapper">
             <a href="#">
-                <img src="../assets/logo/logo-comprimido.png" class="logo-img" alt="">
+                <img src="../assets/logo/logo-navbar.png" class="logo" alt="">
             </a>
-            <a href="#" class="brand-logo hide-on-med-and-down">Q'apiriy</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse">
                 <i class="material-icons">menu</i>
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down list-home">
                 <li>
-                    <a href="sass.html">Inicio</a>
+                    <div id="root" class="image-container">
+                        <img id="imgprofile" class="circle img-perfil" src="">
+                    </div>
                 </li>
                 <li>
-                    <a href="badges.html">Sobre Nosotros</a>
+                    <a class="btn btn-floating white pulse"><i class="material-icons" style="color: black">cloud</i></a>
                 </li>
                 <li>
-                    <a href="collapsible.html">Regístrate</a>
+                    <a href="view-profile.html" class="btn btn-floating white cyan"><i class="material-icons" style="color: black">edit</i></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Estructura de Sider Nav -->
-    <div class="container">
-        <div class="row">
-            <div class="menu-perfil">
-                <ul id="slide-out" class="side-nav fixed">
-                    <li>
-                        <!-- Enlazamos la foto de gmail -->
-                        <div class="user-view">
-                            <div>
-                                <div id="root">
-                                    <a href="#!user" class="img-contacto">
-                                        <img id="imgprofile" class="circle responsive-img" src="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#!">
-                            <i class="material-icons">cloud</i>Explora</a>
-                    </li>
-                    <li>
-                        <a href="view-profile.html">Post</a>
-                    </li>
-                    <li>
-                        <a href="user.html">Amigos</a>
-                    </li>
-                    <li>
-                        <div class="divider"></div>
-                    </li>
-                    <li>
-                        <a class="subheader">Intereses</a>
-                    </li>
-                    <li>
-                        <a class="waves-effect" href="http://ensenaperu.org/">Educación</a>
-                    </li>
-                    <li>
-                        <a class="waves-effect" href="https://cram.org/cram/voluntario-del-cram-suscripcion/">Medio Ambiente</a>
-                    </li>
-                    <li>
-                        <a class="waves-effect" href="http://www.minsa.gob.pe/portada/especiales/2009/voluntariado/default.asp">Salud</a>
-                    </li>
-                    <li>
-                        <a class="waves-effect" href="#!">Recibir y Ayudar a Huéspedes</a>
-                    </li>
-                </ul>
-                <a href="#" data-activates="slide-out" class="button-collapse">
-                    <i class="material-icons">menu</i>
-                </a>
-            </div>
-            <div class="container">
-            
+    <!-- Video introductorio de la red social -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <video class="responsive-video" loop muted autoplay preload="auto">
+                <source src="../assets/video-multimedia/Proa.mp4.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+      <div class="section white">
+        <div class="row container">
             <div class="row">
                 <div class="col s12">
-            
                     <!-- Textarea para agregar nuevas publicaciones -->
                     <div class="profile-post">
                         <form action="">
@@ -105,40 +62,53 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col s12">
-                    <div class="profile-posts-container" id="profilePostsContainer">
-            
-                        <!-- Contenedor de publicaciones -->
-                        <div class="cont-v profile-post">
-                            <div class="video-container">
-                                <iframe width="853" height="480"src="https://www.youtube.com/embed/_Pxa0JBRMp0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="profile-post clearfix">
-                            <div class="image-container">
-                                <img class="responsive-img" src="../assets/img/new2.jpg" alt="Niña en Cusco">
-                            </div>
-                            <p><a href="https://www.aldeasinfantiles.org.pe/n/guardar4/luz-del-sur-dona-9500-dolares-en-beneficio-de-los">Luz del Sur dona 9500 dólares en beneficio de los niños y niñas de Aldeas Infantiles SOS Perú</a></p>
-                        </div>
-                        <div class="profile-post clearfix">
-                            <div class="image-container">
-                                <img class="responsive-img" src="../assets/img/new3.JPG" alt="Mujer con mono en los hombros">
-                            </div>
-                            <p>Uno de los peores finales es acabar solo y abandonado, sin el respaldo de tus familiares, de tus amigos, de tu gente, de todos. Más aún cuando los años ya empiezan a pasar factura, cuando los párpados comienzan ver un mundo donde solo esta una madre o los sueños de un adolescente empiezan a encaminarse sin un rumbo.</p>
-                        </div>
-                        <div class="profile-post clearfix">
-                            <p>Hola, este es mi primera publicación en Q'apariy! Espero conocer muchos amigos y compartir muchas experiencias!</p>
-                        </div>
-            
+            <h2 class="header">Newsfeed</h2>
+            <p class="grey-text text-darken-3 lighten-3">Estudios señalan que a nivel nacional, el 52% de peruanos están dispuestos a hacer voluntariado, sin embargo, sólo 33%
+                lo ha hecho alguna vez.</p>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        <img src="../assets/img/lourdes.png" class="circle" alt="Contact Person"><strong>Lourdes Vilchez</strong>
                     </div>
-            
-                </div>
-            </div>
+                        <div class="col s7 col l7">
+                            <img class="responsive-img" src="../assets/img/noticia3.png" alt="">
+                        </div>
+                        <div class="col s5 col l5">
+                            <img class="responsive-img" src="../assets/img/direccion.png" alt="">
+                        </div>
+                    <div class="collapsible-body">
+                        <span>Voluntariado en Orfanatos (Ayacucho)
+                                
+                                Existen dos tipos de Orfanatos en los que el participante puede apoyar. El primero es para niños abandonados o huérfanos de edades entre 1 semana de nacidos hasta 2 años de edad y el el orfanato para niños entre 2 a 17 años de edad, en el cual hay aproximadamente 70 niños y niñas. Los orfanatos proveen refugio, además brinda atención y  alimentación a los niños. Los voluntarios podrán ayudar en diferentes áreas del orfanato como en el cuidado y atención de los niños, así como también podrán jugar con ellos, asistir en su labores escolares, ayudar en la preparación de sus comidas, alimentarlos, etc.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <div class="chip">
+                            <img src="../assets/img/franco.png" alt="Contact Person">
+                                Franco 
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="comentary">
+                            <span>Ymca me permitió conocer cómo viven las familias del lugar, conocer sus costumbres, su manera de pensar y de ver el mundo; además me permitió entrar a un hospital, conocer al personal y poder trabajar con ellos en equipo; de esta manera pude colaborar desde adentro y entender la realidad del país, considerando que la vida allá es mucho más lenta y se necesita de paciencia para llevar cualquier proyecto a cabo.</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <img src="../assets/img/logoonu.jpg" class="circle onu" alt="Contact Person"><strong>ONU Perú</strong>
+                    </div>
+                    <div class="collapsible">
+                        <img class="responsive-img" src="../assets/img/noticiaonu.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="progress">
+                <div class="indeterminate"></div>
             </div>
         </div>
-    </div>
+      </div>
     <!-- Enlazamos la librería Jquery -->
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <!-- Enlazamos nuestro proyecto de firebase -->
