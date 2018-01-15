@@ -19,7 +19,7 @@ $(document).ready(function() {
   $('#post-btn').on('click', function(e) {
     event.preventDefault();
     var textValue = textArea.val();
-    $('.profile-posts-container').prepend('<div class="profile-post">' + textValue + '</div>');
+    $('.profile-posts-container').prepend('<div class="profile-post2">' + textValue + '</div>');
     textArea.val('');
   });
 

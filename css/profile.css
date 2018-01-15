@@ -39,3 +39,9 @@
     width: 6em;
     height: 6em;
 }
+
+.profile-post2 {
+    padding: 1.5em 1em;
+    border: 1px solid lightgray;
+    margin-bottom: 0.3em;
+}
