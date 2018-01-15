@@ -21,201 +21,115 @@
 <body>
   <header>
     <!-- Barra de Navegación-->
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="newsfeed.html">
-          <span class="logo-container">
-            <img src="../assets/logo/logo-navbar.png" alt="logo">
-          </span>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#">
+          <img src="../assets/logo/logo-navbar.png" class="logo" alt="">
         </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse">
           <i class="material-icons">menu</i>
         </a>
-        <ul class="right hide-on-med-and-down">
+        <ul id="nav-mobile" class="right hide-on-med-and-down list-home">
           <li>
-            <a href="newsfeed.html" class="btn-flat transparent">Inicio
-              <i class="material-icons left">home</i>
+            <div id="root" class="image-container">
+              <img id="imgprofile" class="circle img-perfil" src="">
+            </div>
+          </li>
+          <li>
+            <a class="btn btn-floating white pulse">
+              <i class="material-icons" style="color: black">cloud</i>
             </a>
           </li>
           <li>
-            <a href="newsfeed.html" class="btn-flat transparent">Explorar
-              <i class="material-icons left">search</i>
-            </a>
-          </li>
-
-          <!-- Trigger del Menu Dropdown-->
-          <li>
-            <a class="dropdown-button btn-flat transparent active" href="#" data-activates="dropdown1">Mi Perfil
-              <i class="material-icons left">arrow_drop_down</i>
-            </a>
-          </li>
-
-        </ul>
-
-        <!-- Estructura del Menu Dropdown-->
-        <ul id="dropdown1" class="dropdown-content">
-          <li>
-            <a href="view-profile.html">Mi cuenta
-              <i class="material-icons left">account_circle</i>
-            </a>
-          </li>
-          <li>
-            <a href="userChat.html">Mensajes
-              <i class="material-icons left">message</i>
-            </a>
-          </li>
-          <li>
-            <a href="view-profile.html">Herramientas
-              <i class="material-icons left">tune</i>
-            </a>
-          </li>
-          <li>
-            <a href="register.html" class="logout">Cerrar Sesión
-              <i class="material-icons left">power_settings_new</i>
+            <a href="view-profile.html" class="btn btn-floating white cyan">
+              <i class="material-icons" style="color: black">edit</i>
             </a>
           </li>
         </ul>
-
-        <!-- Barra lateral en vista mobile -->
-        <ul id="mobile-demo" class="side-nav white">
-          <li>
-            <a href="newsfeed.html" class="btn-flat transparent">Inicio
-              <i class="material-icons left">home</i>
-            </a>
-          </li>
-          <li>
-            <a href="newsfeed.html" class="btn-flat transparent">Explorar
-              <i class="material-icons left">search</i>
-            </a>
-          </li>
-          <li>
-            <a href="view-profile.html" class="btn-flat transparent">Mi cuenta
-              <i class="material-icons left">account_circle</i>
-            </a>
-          </li>
-          <li>
-            <a href="userChat.html" class="btn-flat transparent">Mensajes
-              <i class="material-icons left">message</i>
-            </a>
-          </li>
-          <li>
-            <a href="view-profile.html" class="btn-flat transparent">Herramientas
-              <i class="material-icons left">tune</i>
-            </a>
-          </li>
-          <li>
-            <a href="register.html" class="btn-flat transparent logout">Cerrar Sesión
-              <i class="material-icons left">power_settings_new</i>
-            </a>
-          </li>
-        </ul>
-
       </div>
     </nav>
   </header>
 
   <main>
     <!-- Perfil de usuario -->
+    <div class="parallax-container">
+        <div class="parallax"><img class="responsive-img" src="../assets/img/paisaje.jpg"></div>
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col s12">
-          <!-- Primera sección con el perfil y biografía del usuario -->
-          <div class="profile-container">
-            <div class="row">
-              <div class="col s12 m12 l6">
-                <!-- Columna con la imagen y el nombre del usuario-->
-                <div class="first-column">
-                  <div id="root" class="image-container">
-                    <img id="imgprofile" class="circle" src="">
-                  </div>
-                  <p>Mi perfil
-                    <br> honeyapple@gmail.com
-                  </p>
-                </div>
+        <!-- Columna con la imagen y el nombre del usuario-->
+        <div class="col s12 m7">
+          <h2 class="header">Juan Ramos</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="../assets/img/mochilero.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>Ser voluntario me ha hecho crecer mucho como persona. Me gusta aportar algo a los demás y tratar de ser útil
+                  a gente que lo necesita.</p>
               </div>
-              <div class="col s12 m12 l6">
-                <!-- Columna con la biografía y links adicionales -->
-                <div class="second-column">
-                  <p class="center-align">Me llamo María y soy de Lima. Desde muy joven, atraída por la rica cultura de nuestro país,
-                    empecé a viajar por todo el Perú y a conocer distintas realidades. Ser voluntaria me ha hecho crecer
-                    mucho como persona. Me gusta aportar algo a los demás y tratar de ser útil a gente que lo necesita.</p>
-                  <ul class="bio-links">
-                    <li>
-                      <div class="divider"></div>
-                    </li>
-                    <li>
-                      <a class="bio-btn waves-effect waves-orange" href="userChat.html">Mensajes</a>
-                    </li>
-                    <li>
-                      <a class="bio-btn waves-effect waves-orange" href="user.html">Amigos</a>
-                    </li>
-                    <li>
-                      <a class="bio-btn waves-effect waves-orange" href="espacioFotos.html">Fotos</a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="card-action">
+                <a href="#">Galería de Fotos</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Publicaciones de usuario -->
-    <div class="container">
-
-      <div class="row">
-        <div class="col s12">
-
           <!-- Textarea para agregar nuevas publicaciones -->
-          <div class="profile-post">
-            <form action="">
-              <textarea id="text-area" class="noscroll" clid="textarea1" placeholder="¿Algo que compartir?"></textarea>
-              <button id="post-btn" class="waves-effect waves-light btn right" type="submit" value="publica" disabled>Publica</button>
-            </form>
+          <div class="row">
+            <div class="container">
+                <div class="profile-post">
+                    <form action="">
+                      <textarea id="text-area" class="noscroll" clid="textarea1" placeholder="¿Algo que compartir?"></textarea>
+                      <button id="post-btn" class="waves-effect waves-light btn right" type="submit" value="publica" disabled>Publica</button>
+                    </form>
+                </div>
+            </div>
           </div>
-        </div>
-      </div>
 
       <div class="row">
-        <div class="col s12">
-          <div class="profile-posts-container" id="profilePostsContainer">
-
-            <!-- Contenedor de publicaciones -->
-            <div class="profile-post clearfix">
-              <div class="image-container">
-                <img class="responsive-img" src="../assets/img/ejercicios-aire-libre.png" alt="Personas haciendo ejercicio al aire libre">
-              </div>
-              <p>Seguimos en Cusco! Hoy pasamos el día al aire libre con los niños del albergue, después de varios días de lluvia
-                al fin tuvimos un día soleado y aprovechamos el buen tiempo para hacer varios juegos y ejercicios.</p>
-            </div>
-
-            <div class="profile-post clearfix">
-              <p>En la mañana fuimos a comprar más útiles para los niños, su entusiasmo es increíble! No dejo de aprender con
-                ellos.</p>
-            </div>
-
-            <div class="profile-post clearfix">
-              <div class="image-container">
-                <img class="responsive-img" src="../assets/img/z20.jpg" alt="Niña en Cusco">
-              </div>
-              <p>Llegué ayer a Cusco con un grupo de voluntarios para ayudar en un albergue de niños. Al principio estuvieron algo tímidos, pero después de algunas actividades todos estábamos saltando y riendo, me encantan! Esta foto la tomé en la tarde cuando fuimos a comer cerca a la Plaza de Armmas, la niña fue súper dulce! Me dejó tomarle la foto antes de que comiera su mandarina :P <br>
-              Estaré por aquí 1 mes así que si hay alguien cerca pásenme la voz para conocernos!</p>
-            </div>
-
-            <div class="profile-post clearfix">
-              <div class="image-container">
-                <img class="responsive-img" src="../assets/img/contactos/contact9.jpg" alt="Mujer con mono en los hombros">
-              </div>
-              <p>Empecé una nueva aventura en Puerto Maldonado. Aquí con "Max", mi nuevo engreído! A que posa mejor que yo :) </p>
-            </div>
-
-            <div class="profile-post clearfix">
-              <p>Hola, este es mi primera publicación en Q'apariy! Espero conocer muchos amigos y compartir muchas experiencias!</p>
-            </div>
-
-          </div>
-
+        <div class="container">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        <img src="../assets/img/lourdes.png" class="circle" alt="Contact Person"><strong>Lourdes Vilchez</strong>
+                    </div>
+                        <div class="col s7 col l7">
+                            <img class="responsive-img" src="../assets/img/noticia3.png" alt="">
+                        </div>
+                        <div class="col s5 col l5">
+                            <img class="responsive-img" src="../assets/img/direccion.png" alt="">
+                        </div>
+                    <div class="collapsible-body">
+                        <span>Voluntariado en Orfanatos (Ayacucho)
+                                
+                                Existen dos tipos de Orfanatos en los que el participante puede apoyar. El primero es para niños abandonados o huérfanos de edades entre 1 semana de nacidos hasta 2 años de edad y el el orfanato para niños entre 2 a 17 años de edad, en el cual hay aproximadamente 70 niños y niñas. Los orfanatos proveen refugio, además brinda atención y  alimentación a los niños. Los voluntarios podrán ayudar en diferentes áreas del orfanato como en el cuidado y atención de los niños, así como también podrán jugar con ellos, asistir en su labores escolares, ayudar en la preparación de sus comidas, alimentarlos, etc.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <div class="chip">
+                            <img src="../assets/img/franco.png" alt="Contact Person">
+                                Franco 
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="comentary">
+                            <span>Ymca me permitió conocer cómo viven las familias del lugar, conocer sus costumbres, su manera de pensar y de ver el mundo; además me permitió entrar a un hospital, conocer al personal y poder trabajar con ellos en equipo; de esta manera pude colaborar desde adentro y entender la realidad del país, considerando que la vida allá es mucho más lenta y se necesita de paciencia para llevar cualquier proyecto a cabo.</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <img src="../assets/img/logoonu.jpg" class="circle onu" alt="Contact Person"><strong>ONU Perú</strong>
+                    </div>
+                    <div class="collapsible">
+                        <img class="responsive-img" src="../assets/img/noticiaonu.png" alt="">
+                    </div>
+                </li>
+            </ul>
         </div>
       </div>
     </div>

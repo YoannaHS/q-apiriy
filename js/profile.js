@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // Funcionalidad de Materialize para que links del navbar se conviertan en menu hamburguesa
   $('.button-collapse').sideNav();
+  $('.parallax').parallax();
 
 
   // Funcionalidad para que podamos hacer nuevas publicaciones en nuestro perfil
