@@ -15,15 +15,26 @@ function showimagesFB(){
     var areaphotos = $('#arephotosFB');
     var result="";
    for(var key in datos){
-   // var areaphotos ="";   
-     result += '<a class="big-photo modal-trigger" data-target="modal-lg"><div class="galeryfb col s6 m4 l4"><img class="imgfb card-image" src="'+datos[key].url + '"/></div></a>';     
+   // var areaphotos =""; 
+     
+     result += '<a class="big-photo modal-trigger" data-target="modal-lg"><div class="galeryfb col s6 m4 l4"><img class="imgfb" src="'+datos[key].url + '"/><a href="#!" class="secondary-content"><i class="material-icons delete-filefb delete-file">cancel</i></a></div></a>';     
       areaphotos.html(result);               
-      //contimg.html(result);   
-       
-     }
+      //contimg.html(result);  
+      console.log( typeof key);  
+       deletePhotofb();
+       deletePhoto(); 
+       function deletePhotofb() {
+          $('.delete-filefb').click(function() {
+               imagenesFBRef.child(key).remove();
+            });
+          }
+         }
    
    })
 }
+/*eliminar imagen*/
+
+
 
 input.on('change',false,function() {
  updateImageDisplay(); 
@@ -54,10 +65,9 @@ function updateImageDisplay() {
       },
       function(){
          var downloadURL = uploadTask.snapshot.downloadURL;
-          createNodeDB(imagenSubir.name,downloadURL);
-         
+          createNodeDB(imagenSubir.name,downloadURL);         
           deletePhoto();
-          
+           $('.preview').hide();
   });
 
 
