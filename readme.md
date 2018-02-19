@@ -1,8 +1,10 @@
-Q'APIRIY
+#Q'APIRIY
 =================
 La red social que integra a toda una comunidad dispuesta a colabrorar en el voluntariado mientras Viaja, Comparte y vive nuevas experiencias.
 
 ![image](https://user-images.githubusercontent.com/32310691/36332439-2a8eb9f0-1340-11e8-995d-5a450459edd0.png))
+
+##Desarrollado para [Laboratoria](http://www.laboratoria.la/)
 
 **Problemática**
 
